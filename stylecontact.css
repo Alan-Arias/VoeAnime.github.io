@@ -1,0 +1,140 @@
+body{
+    margin: 0;
+    background-color: rgb(238, 243, 247);
+}
+  
+::-webkit-scrollbar {
+  width: 10px; /* Ancho de la barra de desplazamiento */
+}
+
+/* Estilo del "thumb" o agarre de la barra de desplazamiento */
+::-webkit-scrollbar-thumb {
+  background-color: rgb(5, 20, 63); /* Color del agarre */
+  border-radius: 10px; /* Borde redondeado del agarre */
+}
+
+/* Estilo del fondo de la barra de desplazamiento */
+::-webkit-scrollbar-track {
+  background-color: #ffffff; /* Color del fondo */
+  border-radius: 10px; /* Borde redondeado del fondo */
+}
+
+
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #104969;
+  color: #fff;
+  padding: 20px;
+  max-width: 100%;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.8cm;
+  font-family: sans-serif;
+  margin: 16px;
+}
+nav ul li a:hover{
+  color: red;
+  font-size: 0.8cm;
+  text-decoration: solid;
+}
+.profile {
+  display: flex;
+  align-items: center;
+}
+
+.profile img {
+  width: 2.3cm;
+  height: 2.3cm;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.logo a img {
+  width: 60px;
+  height: 60px;
+}
+.logo p{
+  display: inline;
+  font-size: 1cm;
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    line-height: 2;
+  }
+  
+  nav ul {
+    margin-top: 20px;
+    display: block;
+  }
+  nav ul li a{
+      font-size: 0.8cm;
+  }
+  nav ul li{
+      text-align: center;
+      margin-left: 0;
+  }
+  nav ul li a:hover{
+      font-size: 0.8cm;
+  }
+  nav .logo{
+      text-align: center;
+  }
+  nav .logo p{
+      font-size: 0.67cm;
+  }
+}
+.div-content{
+    background-color: aliceblue;
+    border: 3px solid black;
+    display: flex;
+    margin: 7% 7% 0.01cm 7%;
+    border-radius: 15px;
+    justify-content: center;
+}
+.div-content p{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.7cm;
+}
+@media (max-width:500px) {
+    .div-content{
+        margin: 7% 0 1% 0;
+    }
+    .div-content p{
+        font-size: 0.5cm;
+    }
+}
+@media (max-width:330px) {
+    .div-content{
+        margin: 7% 0 1% 0;
+    }
+    .div-content p{
+        font-size: 0.33cm;
+    }   
+    .div-content p img{
+        width: 0;
+        height: 0;
+        visibility: collapse;
+    } 
+}
