@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +7,15 @@
     <link rel="stylesheet" href="stylech1.css">
     <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/5249/5249336.png" type="image/x-icon">
 
+    <script>
+      function mostrarComentarios() {
+        const seccionComentarios = document.querySelector('#contenedorComentarios');
+        const botonMostrar = document.querySelector('.show-comm');
+        seccionComentarios.style.display = 'block';
+        botonMostrar.style.display = 'none';
+        
+      }
+    </script>
     <title>VoeAnime</title>
 </head>
 <body>
@@ -43,7 +52,11 @@
     <a href="index.html">Capitulos</a>
     <a href="">Siguiente</a>
   </div>
-
+<div class="button-show">
+  <button class="show-comm" onclick="mostrarComentarios()">Mostrar Comentarios</button>
+</div>
+  
+<div id="contenedorComentarios" style="display:none;">
   <section class="comment">
     <div id="disqus_thread"></div>
 <script>
@@ -66,7 +79,7 @@
 <noscript>Please enable JavaScript to view the 
     <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
   </section>
-
+</div>
 <footer>
     <div class="social-media">
       <a href="https://www.facebook.com/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/2504/2504903.png" alt="Facebook"></a>
