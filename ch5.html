@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylech1.css">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/5249/5249336.png" type="image/x-icon">
+
+    <script>
+      function mostrarComentarios() {
+        const seccionComentarios = document.querySelector('#contenedorComentarios');
+        const botonMostrar = document.querySelector('.show-comm');
+        seccionComentarios.style.display = 'block';
+        botonMostrar.style.display = 'none';
+        
+      }
+    </script>
+
+<title>VoeAnime</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="https://cdn-icons-png.flaticon.com/512/5249/5249336.png" alt="Logo">
+                </a>
+                <p>VoeAnime</p>
+            </div>
+            <div class="items-list">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="Contact.html">Contacto</a></li>
+                </ul>
+            </div>
+        
+            <div class="profile">
+                <img src="https://cdn-icons-png.flaticon.com/512/668/668709.png" alt="Foto de perfil" id="imagen">
+            </div>
+        </nav>
+</header>
+
+<section class="video-ssth1">
+    <h3 class="titulo">Saint Seiya Hades Capitulo 5</h3>
+    <IFRAME id="video-iframe" SRC="https://sbbrisk.com/e/195tlwuzp5fz.html" FRAMEBORDER=0 
+    MARGINWIDTH=0 MARGINHEIGHT=0 SCROLLING=NO WIDTH=640 HEIGHT=360 allowfullscreen>
+    </IFRAME>
+  </section>
+  <div class="bnt-sig-ant">
+    <a href="ch4.html">Anterior</a>
+    <a href="index.html">Capitulos</a>
+    <a href="ch6.html">Siguiente</a>
+  </div>
+
+<div class="button-show">
+  <button class="show-comm" onclick="mostrarComentarios()">Mostrar Comentarios</button>
+</div>
+  
+<div id="contenedorComentarios" style="display:none;">
+  <section class="comment">
+    <div id="disqus_thread"></div>
+    <script>
+      /**
+      *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+      *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+      /*
+      var disqus_config = function () {
+      this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+      };
+      */
+      (function () { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = 'https://voeanimech1.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      })();
+    </script>
+    <noscript>Please enable JavaScript to view the
+      <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </section>
+
+</div>
+<footer>
+    <div class="social-media">
+      <a href="https://www.facebook.com/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/2504/2504903.png" alt="Facebook"></a>
+      <a href="https://www.youtube.com/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/2504/2504848.png" alt="YouTube"></a>
+    </div>
+    <div class="links">
+      <ul>
+        <li><a href="#">Términos y condiciones</a></li>
+        <li><a href="#">Política de privacidad</a></li>
+        <li><a href="#">Sobre mi sitio web</a></li>
+      </ul>
+    </div>
+</footer>
+</body>
+</html>
