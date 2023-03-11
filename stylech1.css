@@ -123,18 +123,57 @@ body{
   @media screen and (max-width: 768px) {
     #video-iframe{
       width: 98%;
-      height: 250px;
+      height: 340px;
     }
     .profile img{
       margin-top: 20px;
       height: 2.3cm;
       width: 2.3cm;
     }
+    
     .bnt-sig-ant a{
       width: 100%;
     }
   }
 
+
+  @media (max-width: 250px) {
+    .bnt-sig-ant{
+      display: block;
+    }
+  }
+
+
+  .button-show{
+    text-align: center;
+    margin: 1cm auto;
+  }
+  .show-comm{
+    width: 49%;
+    height: 40px;
+    background-color: #5743b1;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 0.5cm;
+  }
+  .show-comm:hover{
+    cursor: pointer;
+    background-color: #df5252;
+    
+  }
+  @media (max-width:800px) {
+    .show-comm{
+      width: 80%;
+    }
+  }
+  @media (max-width:390px) {
+    .show-comm{
+      font-size: medium;
+      width: 90%;
+    }
+  }
 /*SCROLLBAR DEL WEBSITE*/
   
 ::-webkit-scrollbar {
@@ -204,6 +243,12 @@ body{
     }
   }
   .comment{
-    background-color: rgba(148, 142, 142, 0.418);
+    padding-top: 1cm;
+    text-decoration: #31217a;
+    color: #31217a;
+    background-color: rgb(206, 202, 202);
     border-radius: 15px;
+  }
+  .comment >*{
+    color: #ffffff;
   }
